@@ -8,7 +8,7 @@ export default function App() {
     <>
       <Home />
       <Weather />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

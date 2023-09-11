@@ -1,3 +1,4 @@
+/* Default styles */
 .container1 {
   width: 437px;
   height: 621px;
@@ -7,7 +8,6 @@
   background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   gap: 14px;
-  padding-top: 30px; 
+  padding-top: 30px;
 }
 
 .top-bar input {
@@ -35,7 +35,7 @@
   width: 58px;
   height: 58px;
   background: white;
-  border-radius: 50%; 
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +43,7 @@
 }
 
 .weather_icon {
-  margin-top: 20px; 
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -51,32 +51,31 @@
 .weather-temp {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   color: wheat;
   padding: 20px;
   font-size: 80px;
   font-weight: 400;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 .weather-location {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   color: white;
   padding: 40px;
   font-size: 40px;
   font-weight: 400;
-  margin-top: 10px; 
+  margin-top: 10px;
 }
-
 
 .data-container {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin-top: 20px;
   color: white;
-  width: 80%; 
+  width: 80%;
 }
 
 .element {
@@ -87,7 +86,7 @@
 
 .data,
 .text {
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: 400;
   padding: 5px;
 }
@@ -96,3 +95,56 @@
   margin-top: 10px;
 }
 
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .container1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    padding: 20px;
+  }
+
+  .top-bar {
+    padding-top: 20px;
+  }
+
+  .top-bar input {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 10px;
+  }
+
+  .search-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .weather-icon {
+    margin-top: 10px;
+  }
+
+  .weather-temp {
+    font-size: 60px;
+    margin-top: 10px;
+  }
+
+  .weather-location {
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .data-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .element {
+    margin: 10px 0;
+  }
+
+  .data,
+  .text {
+    font-size: 20px;
+  }
+}
